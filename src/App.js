@@ -1,11 +1,12 @@
-import { Input } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './components/Home';
 
 function App() {
     return (
-        <div style={{textAlign: 'center', marginTop: '10vh', width: '100%'}}>
-            <Input icon='search' placeholder='Search...'/>
-        </div>
+        <Router>
+            <Route exact path='/' component={Home} />
+        </Router>
     )
 }
 

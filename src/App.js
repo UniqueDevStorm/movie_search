@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { Input } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div style={{textAlign: 'center', marginTop: '10vh', width: '100%'}}>
+            <Input icon='search' placeholder='Search...'/>
+        </div>
+    )
 }
 
 export default App;
